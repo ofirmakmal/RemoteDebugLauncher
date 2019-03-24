@@ -1,11 +1,13 @@
 # RemoteDebugLauncher
 VS Extension: Compile and invoke DebugAdapterHost.Launch 
 
-First, prepare your project for remote debugging according to:
+1. Prepare your project for remote debugging according to:
 https://github.com/Microsoft/MIEngine/wiki/Offroad-Debugging-of-.NET-Core-on-Linux---OSX-from-Visual-Studio
 
-Second, copy the `launch.json` created in first step to your solution or project folder.
+2. Set the output build path to a network share and configure `launch.json` accordingly.
 
-Third, install this extension and press CTRL+ALT+SHIFT+F5.
+3. Copy the `launch.json` created in steps 1 and 2 to your solution or project folder.
 
-This will trigger a build (of the current project using the current configuration) and start remote debugging afterwards by invoking `DebugAdapterHost.Launch /LaunchJson:"<solution/project-directory>\launch.json" `
+4. Install this extension.
+
+Now you can press CTRL+ALT+SHIFT+F5. This will trigger a build (of the current project using the current configuration) and start remote debugging afterwards by invoking `DebugAdapterHost.Launch /LaunchJson:"<solution/project-directory>\launch.json" `
