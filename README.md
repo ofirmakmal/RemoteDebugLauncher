@@ -1,6 +1,8 @@
 # RemoteDebugLauncher
 VS Extension: Compile and invoke DebugAdapterHost.Launch 
 
+This version is adapted to work with VS2019
+
 1. Prepare your project for remote debugging according to:
 https://github.com/Microsoft/MIEngine/wiki/Offroad-Debugging-of-.NET-Core-on-Linux---OSX-from-Visual-Studio
 
