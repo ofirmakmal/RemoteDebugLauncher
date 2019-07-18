@@ -124,7 +124,9 @@ namespace RemoteDebugCommand
             
             var projectFilePath = project.FullName;
             var solutionFilePath = dte.Solution.FullName;
-            var searchPaths = new string[] { solutionFilePath, projectFilePath };
+            var globalFilePath = @"c:\temp\";
+
+            var searchPaths = new string[] { solutionFilePath, projectFilePath, globalFilePath };
             ProjectLaunchFilePath = null;
             foreach (var path in searchPaths)
             {
